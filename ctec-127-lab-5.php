@@ -73,10 +73,10 @@
                                         ?>" name="originaltemp" size="14" maxlength="7" id="temp">
 
             <select name="originalunit">
-                <option value="--Select--"> <?php if ($originalUnit == "--Select--") echo ' selected="selected"'; ?>>--Select--</option>
-                <option value="celsius"> <?php if ($originalUnit == "celsius") echo ' selected="selected"'; ?>>Celsius</option>
-                <option value="fahrenheit"> <?php if ($originalUnit == "fahrenheit") echo ' selected="selected"'; ?>>Fahrenheit</option>
-                <option value="kelvin"> <?php if ($originalUnit == "kelvin") echo ' selected="selected"'; ?>>Kelvin</option>
+                <option value="--Select--" <?php if ($originalUnit == "--Select--") echo ' selected="selected"'; ?>>--Select--</option>
+                <option value="celsius" <?php if ($originalUnit == "celsius") echo ' selected="selected"'; ?>>Celsius</option>
+                <option value="fahrenheit" <?php if ($originalUnit == "fahrenheit") echo ' selected="selected"'; ?>>Fahrenheit</option>
+                <option value="kelvin" <?php if ($originalUnit == "kelvin") echo ' selected="selected"'; ?>>Kelvin</option>
             </select>
         </div>
 
@@ -86,10 +86,10 @@
                                         echo $finalTemp; ?>" name="convertedtemp" size="14" maxlength="7" id="convertedtemp" readonly>
 
             <select name="conversionunit">
-                <option value="--Select--"> <?php if ($conversionUnit == "--Select--") echo ' selected="selected"'; ?>>--Select--</option>
-                <option value="celsius"> <?php if ($conversionUnit == "celsius") echo ' selected="selected"'; ?>>Celsius</option>
-                <option value="fahrenheit"> <?php if ($conversionUnit == "fahrenheit") echo ' selected="selected"'; ?>>Fahrenheit</option>
-                <option value="kelvin"> <?php if ($conversionUnit == "kelvin") echo ' selected="selected"'; ?>>Kelvin</option>
+                <option value="--Select--" <?php if ($conversionUnit == "--Select--") echo ' selected="selected"'; ?>>--Select--</option>
+                <option value="celsius" <?php if ($conversionUnit == "celsius") echo ' selected="selected"'; ?>>Celsius</option>
+                <option value="fahrenheit" <?php if ($conversionUnit == "fahrenheit") echo ' selected="selected"'; ?>>Fahrenheit</option>
+                <option value="kelvin" <?php if ($conversionUnit == "kelvin") echo ' selected="selected"'; ?>>Kelvin</option>
             </select>
         </div>
         <input type="submit" value="Convert">
