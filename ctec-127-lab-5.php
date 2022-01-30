@@ -57,6 +57,21 @@
         $originalUnit = $_POST['originalunit'];
         $conversionUnit = $_POST['conversionunit'];
         $convertedTemp = convertTemp($originalTemperature, $originalUnit, $conversionUnit);
+    }
+    if (isset($_POST['originalunit'])) {
+        $originalUnit = $_POST['originalunit'];
+    } else {
+        $originalUnit = "";
+    }
+    if (isset($_POST['conversionunit'])) {
+        $conversionUnit = $_POST['conversionunit'];
+    } else {
+        $conversionUnit = "";
+    }
+    if (isset($_POST['originaltemp'])) {
+        $originalTemperature = $_POST['originaltemp'];
+    } else {
+        $originalTemperature = "";
     } // end if
 
     ?>
